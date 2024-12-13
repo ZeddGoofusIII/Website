@@ -33,7 +33,7 @@ header {
     flex-wrap: wrap;
     text-align: center;
     
-    img {
+    img { 
        width: 10%;
        height: 10%;
        align-self: center;
@@ -44,6 +44,12 @@ header {
 
     img:nth-child(2){
         margin-left: 0px;
+    }
+
+    #vid {
+        display: block;
+        margin: 0 auto;
+        padding: auto;
     }
 
     nav  {
@@ -69,7 +75,7 @@ header {
 }
 }
 
-header h2 {
+header h1 {
     font-size: 55px;
     vertical-align: middle;
     font-family: "Audiowide", sans-serif;
@@ -132,9 +138,6 @@ div {
 
 }
 
-h1 {
-    padding-bottom: auto;
-}
 
 body {
     color: #000000;
@@ -162,7 +165,7 @@ section {
         margin-top: 5px;
     }
 
-    h1, p {
+    h2, p {
         margin-inline-start: 12px;
     }
 
@@ -175,13 +178,13 @@ section {
     }
 }
 
+
 div #binless {
     border-inline-end: none;
 }
 
 aside img {
     margin: 10px;
-    display: flex;
     border: var(--Urple) double 5px;
     float: inline-start;
     max-width: 20%;
@@ -194,31 +197,52 @@ h3 {
     font-weight: bold;
 }
 
-.forma {
+form{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    overflow: auto;
-    * {
-        margin: 7px;
-        grid-column: span 3;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
+
+    label {
+        grid-column: span 2;
     }
+
+    input[type=text]{
+        grid-column: span 2;
+    }
+
+    select {
+        grid-column: span 2;
+    }
+
     fieldset {
-        grid-column: span 3;
+        grid-column: span 2;
+        margin: 5px;
     }
 
+    input[type=submit], input[type=reset]{
+        width: 80px;
+        margin: auto;
+    }
+
+    
+
 }
-fieldset {
-    display: inline;
+
+h4 {
+    font-size: 5vi;
+    text-align: center;
+    
 }
 
-.boneless {
-    border-inline: none;
+.too {
+    display: none;
 }
-
-
-
 
 @media screen and (min-width: 768px) {
+    input, label {
+        grid-column: span 1;
+    }
+    
     nav a:hover {
         color: var(--Grayple);
 
@@ -245,7 +269,6 @@ fieldset {
 
             img {
                 max-height: 150px;
-                
             }
         }
 
@@ -259,12 +282,18 @@ fieldset {
             footer li {
                 padding: 0 5vi;
                 font-size: 1.5em;
-                overflow-inline: scroll;
+                
             }
 
             footer ul > li {
                 padding-left: 3.5vi;
             }
+
+            .too {
+                display: inline;
+            }
+    
+            
 }
     
 

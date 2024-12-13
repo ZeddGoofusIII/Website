@@ -13,22 +13,25 @@
 <body>
     <header>
         <img src="./Pics/ElPausa.png" alt="Our Logo">
-        <h2>Equinumb</h2>
+        <h1>Equinumb</h1>
         <img src="./Pics/ElPausa.png" alt="Our Logo">
-        <nav>
+        <nav role="separator">
             <ul>
                 <li><a href="./index.html">index</a></li>
                 <li><a href="./Products.html">Products</a></li>
                 <li><a href="./FAQ.html">FAQ</a></li>
-                <li><a href="./Services.html">Related services</a></li>
-                <li><a href="./Hours.html">Business Hours</a></li>
-        </ul>
-    </nav>
+                <li><a href="./Services">Related services</a></li>
+                <li><a href="./Hours.html">Hours & Rates</a></li>
+                <li class="too"><a href="./ContactUs.html">Contact Us</a></li>
+                <li class="too"><a href="./AboutUs.html">About Us</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
+        <h4>Contact Us</h4>
         <aside>
-        <section>
-            <form action="get" class="forma">
+        <section role="separator">
+            <form action="/ContactUs.html">
                 <label for="FName">First Name</label>
                 <input type="text" id="FName" name="FName">
                 <label for="LName">Last Name</label>
@@ -42,10 +45,30 @@
                     <option value="3">Vancouver Branch</option>
                     <option value="4">Pensylvania Branch</option>
                 </select>
-                <div class="form-check-input boneless">
-               <fieldset>
-                <p>What service are you contacting us about?</p>
+                <fieldset>
+                    <legend>What do you wish contoct us for</legend>
+                    <input type="checkbox" name="ref" id="ref">
+                    <label for="ref">Product refunds</label><br>
+                    <input type="checkbox" id="repair" name="repair">
+                    <label for="repair">Repairing Service</label><br>
+                    <input type="checkbox" id="moving" name="moving">
+                    <label for="moving">Moving service</label><br>
+                    <input type="checkbox" name="details" id="details">
+                    <label for="details">Delivery details</label><br>
                 </fieldset>
+                <fieldset>
+                    <legend>How did you find our business</legend>
+                    <input type="radio" id="mouth" name="how">
+                    <label for="mouth">Word of mouth</label><br>
+                    <input type="radio" id="adv" name="how">
+                    <label for="adv">Online advertisement</label><br>
+                    <input type="radio" id="stumble" name="stumble">
+                    <label for="stumble">Just stumbled upon your website</label><br>
+                </fieldset>
+                <fieldset id="final">
+                <input type="submit" value="submit">
+                <input type="reset" value="Clear info">
+            </fieldset>
             </form>
         </section>
     </aside>
