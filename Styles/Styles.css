@@ -64,7 +64,7 @@ header {
         li {
             display: inline;
             justify-self: auto;
-            margin: 0 3vi;
+            margin: 0 2vi;
         }
     
     
@@ -102,6 +102,27 @@ nav{
     }
  }
 
+.g2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.g {
+    margin: 15px ;
+    margin-top: 25px;
+
+    ul {
+        list-style: none;
+    }
+}
+
+.puse::before{
+    background-image: url("../Pics/clock-1605224_1280.png");
+    background-size: 20px;
+    content:'\00a0\00a0\00a0\00a0\00a0\00a0';
+    background-repeat: no-repeat;
+}
 
 
 footer  {
@@ -291,6 +312,15 @@ h4 {
 
             .too {
                 display: inline;
+            }
+
+            .g2 {
+                grid-template-columns: 1fr 1fr;
+                gap: -10px;
+            }
+
+            g {
+                margin: auto;
             }
     
             
